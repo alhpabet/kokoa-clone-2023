@@ -1,3 +1,3 @@
-#kokoa clone 2023 update
+# kokoa clone 2023 update
 
-css got so much better!
+html & css got so much fun!
