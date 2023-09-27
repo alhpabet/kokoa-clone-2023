@@ -1,0 +1,40 @@
+.screen-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:var(--horizontal-space);
+  margin-bottom:15px;
+}
+
+.screen-header__title{
+    font-size:32px;
+    font-weight:600;
+}
+
+.screen-header__icons span{
+    margin-left:25px;
+}
+
+.screen-header__icons{
+  position:relative;
+}
+
+/*
+relative를 쓰면 동급 친구들과의 상호작용이 유지됩니다.
+
+반면에 absolute를 쓰면 동급 친구들과의 상호작용이 무너집니다.
+*/
+
+@keyframes rotateCog{
+  from{
+    transform:none;
+  } 
+  to{
+    transform:rotateZ(360deg);
+  }
+}
+
+
+.screen-header__icons  .fa-gear:hover{
+  animation: rotateCog 1s linear infinite;
+}
